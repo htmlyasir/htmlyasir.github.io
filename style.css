@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+:root,
+:root.dark {
+  --primary-bg: #292d36;
+  --color-fg: #ecf0f3;
+  --secondary-bg: inset 5px 5px 12px #2b2b2b,
+    5px 5px 12px rgba(255, 255, 255, 0.16);
+  --buttons-bg: #292d36;
+}
+
+:root.light {
+  --primary-bg: #ecf0f3;
+  --color-fg: #292d36;
+  --secondary2-bg: -3px -3px 7px #ffffff73,
+    2px 2px 3px rgba(94, 104, 121, 0.288);
+  --secondary-bg: inset 5px 5px 12px #ffffff, 5px 5px 12px rgba(0, 0, 0, 0.16);
+  --buttons-bg: #ecf0f3;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  padding: 15px;
+  width: 400px;
+  background-color: var(--primary-bg);
+  border-radius: 30px;
+  box-shadow: var(--secondary-bg);
+  display: grid;
+  grid-template-columns: repeat(4, 68px);
+}
+
+.calculator-screen {
+  grid-column: span 5;
+  width: 100%;
+  height: 70px;
+  text-align: right;
+  border: none;
+  background-color: #ecf0f3;
+  box-shadow: inset -5px -5px 12px #ffffff,
+    inset 5px 5px 12px rgba(0, 0, 0, 0.16);
+  border-radius: 30px;
+  color: rgb(70, 70, 70);
+  font-size: 36px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.calculator-keys {
+  width: 100%;
+  grid-column: span 5;
+}
+
+.row {
+  display: flex;
+}
+
+button {
+  height: 80px;
+  width: 25%;
+  background-color: #dde1e7;
+  box-shadow: var(--secondary2-bg);
+  border-radius: 30%;
+  border: none;
+  color: gray;
+  font-size: 32px;
+  outline: none;
+  margin: 8px;
+  cursor: pointer;
+}
+
+button:active {
+  position: relative;
+  top: 3px;
+}
+
+button:focus {
+  color: rgb(39, 238, 49) !important;
+  box-shadow: var(--secondary2-bg);
+}
+
+.all-clear,
+.zero-btn {
+  width: 55%;
+  border-radius: 30px;
+}
+
+.operator,
+.equal-sign {
+  background-color: orange;
+}
+
+/* button:hover {
+  background-color: darkgray;
+} */
+
+.operator:hover,
+.equal-sign:hover {
+  background-color: darkorange;
+}
+
+.drak_mod {
+  background: var(--buttons-bg);
+  padding: 4px 6px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.drak_mod .drak,
+.drak_mod .light {
+  font-size: 1rem;
+  color: var(--color-fg);
+  margin: 2px 8px;
+}

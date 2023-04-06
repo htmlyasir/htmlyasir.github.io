@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculator">
+        <div class="drak_mod">
+          <span class="dark">&#9790;</span>
+          <span class="light">&#9728;</span>
+        </div>
+        <input type="text" class="calculator-screen" value="0" disabled />
+        <div class="calculator-keys">
+          <div class="row">
+            <button class="all-clear" data-operation>AC</button>
+            <button class="percentage">%</button>
+            <button class="operator" value="/">&divide;</button>
+          </div>
+          <div class="row">
+            <button class="number darkk" value="7">7</button>
+            <button class="number darkk" value="8">8</button>
+            <button class="number darkk" value="9">9</button>
+            <button class="operator" value="*">&times;</button>
+          </div>
+          <div class="row">
+            <button class="number darkk" value="4">4</button>
+            <button class="number darkk" value="5">5</button>
+            <button class="number darkk" value="6">6</button>
+            <button class="operator darkk" value="-">-</button>
+          </div>
+          <div class="row">
+            <button class="number darkk" value="1">1</button>
+            <button class="number darkk" value="2">2</button>
+            <button class="number darkk" value="3">3</button>
+            <button class="operator darkk" value="+">+</button>
+          </div>
+          <div class="row">
+            <button class="number zero-btn darkk" value="0">0</button>
+            <button class="decimal darkk" value=".">.</button>
+            <button class="equal-sign">=</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
